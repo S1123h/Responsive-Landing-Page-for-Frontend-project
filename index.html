@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Nexus - Build better digital experiences with our modern platform." />
+  <title>Nexus | Build Better Digital Experiences</title>
+
+  <!-- Google Fonts - Inter for clean modern look -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <!-- ===================== HEADER / NAVIGATION ===================== -->
+  <!-- Sticky header with logo, navigation links and CTA button.
+       On mobile the links collapse into a hamburger menu. -->
+  <header class="header">
+    <div class="container header__inner">
+      <!-- Logo -->
+      <a href="#" class="logo" aria-label="Nexus Home">
+        <span class="logo__icon">◆</span>
+        <span class="logo__text">Nexus</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav__list">
+          <li><a href="#features" class="nav__link">Features</a></li>
+          <li><a href="#how-it-works" class="nav__link">How it Works</a></li>
+          <li><a href="#testimonials" class="nav__link">Testimonials</a></li>
+          <li><a href="#pricing" class="nav__link">Pricing</a></li>
+        </ul>
+      </nav>
+
+      <!-- Header CTA (hidden on very small screens) -->
+      <a href="#cta" class="btn btn--primary header__cta">Get Started</a>
+
+      <!-- Hamburger button - only visible on mobile -->
+      <button class="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+        <span class="hamburger__line"></span>
+      </button>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <nav class="mobile-nav" aria-label="Mobile navigation">
+      <ul class="mobile-nav__list">
+        <li><a href="#features" class="mobile-nav__link">Features</a></li>
+        <li><a href="#how-it-works" class="mobile-nav__link">How it Works</a></li>
+        <li><a href="#testimonials" class="mobile-nav__link">Testimonials</a></li>
+        <li><a href="#pricing" class="mobile-nav__link">Pricing</a></li>
+        <li><a href="#cta" class="btn btn--primary mobile-nav__cta">Get Started</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ===================== HERO SECTION ===================== -->
+    <!-- Full-width hero with headline, supporting text and dual CTAs.
+         Uses Flexbox for vertical centering and responsive stacking. -->
+    <section class="hero" id="hero">
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <p class="hero__eyebrow">Introducing Nexus 2.0</p>
+          <h1 class="hero__title">
+            Build better digital<br />
+            experiences, faster
+          </h1>
+          <p class="hero__subtitle">
+            The modern platform that helps teams design, ship and scale beautiful products with confidence.
+          </p>
+          <div class="hero__actions">
+            <a href="#cta" class="btn btn--primary btn--lg">Start Free Trial</a>
+            <a href="#features" class="btn btn--secondary btn--lg">See Features</a>
+          </div>
+          <p class="hero__note">No credit card required · 14-day free trial</p>
+        </div>
+
+        <!-- Decorative visual element (pure CSS shapes for zero image dependency) -->
+        <div class="hero__visual" aria-hidden="true">
+          <div class="hero__card hero__card--1"></div>
+          <div class="hero__card hero__card--2"></div>
+          <div class="hero__card hero__card--3"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FEATURES SECTION ===================== -->
+    <!-- Three feature cards in a responsive grid.
+         On mobile they stack; on larger screens they sit side-by-side. -->
+    <section class="features" id="features">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Everything you need to ship faster</h2>
+          <p class="section-subtitle">
+            Powerful tools designed for modern product teams. Simple enough for beginners, powerful enough for experts.
+          </p>
+        </div>
+
+        <div class="features__grid">
+          <!-- Feature 1 -->
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">⚡</div>
+            <h3 class="feature-card__title">Lightning Fast</h3>
+            <p class="feature-card__text">
+              Optimized performance out of the box. Your users will feel the difference from the first click.
+            </p>
+          </article>
+
+          <!-- Feature 2 -->
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🎨</div>
+            <h3 class="feature-card__title">Beautiful by Default</h3>
+            <p class="feature-card__text">
+              Thoughtful design system and components that look polished without hours of custom styling.
+            </p>
+          </article>
+
+          <!-- Feature 3 -->
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🔒</div>
+            <h3 class="feature-card__title">Secure & Reliable</h3>
+            <p class="feature-card__text">
+              Enterprise-grade security and 99.9% uptime so you can focus on building, not worrying.
+            </p>
+          </article>
+
+          <!-- Feature 4 -->
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">📱</div>
+            <h3 class="feature-card__title">Fully Responsive</h3>
+            <p class="feature-card__text">
+              Looks and works great on every device — from large desktops to the smallest phones.
+            </p>
+          </article>
+
+          <!-- Feature 5 -->
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">🤝</div>
+            <h3 class="feature-card__title">Team Collaboration</h3>
+            <p class="feature-card__text">
+              Real-time collaboration tools that keep everyone aligned and moving forward together.
+            </p>
+          </article>
+
+          <!-- Feature 6 -->
+          <article class="feature-card">
+            <div class="feature-card__icon" aria-hidden="true">📊</div>
+            <h3 class="feature-card__title">Actionable Insights</h3>
+            <p class="feature-card__text">
+              Built-in analytics help you understand usage and make data-driven product decisions.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== HOW IT WORKS ===================== -->
+    <section class="how-it-works" id="how-it-works">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">How it works</h2>
+          <p class="section-subtitle">Get up and running in minutes, not days.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step__number">01</div>
+            <h3 class="step__title">Sign up free</h3>
+            <p class="step__text">Create your account in under a minute. No credit card needed.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">02</div>
+            <h3 class="step__title">Connect your tools</h3>
+            <p class="step__text">Integrate with the tools your team already uses every day.</p>
+          </div>
+          <div class="step">
+            <div class="step__number">03</div>
+            <h3 class="step__title">Start shipping</h3>
+            <p class="step__text">Launch faster with pre-built templates and powerful automation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Loved by teams worldwide</h2>
+          <p class="section-subtitle">Join thousands of product teams already using Nexus.</p>
+        </div>
+
+        <div class="testimonials__grid">
+          <blockquote class="testimonial">
+            <p class="testimonial__text">
+              “Nexus cut our design-to-development handoff time in half. The whole team is more productive.”
+            </p>
+            <footer class="testimonial__author">
+              <strong>Sarah Chen</strong>
+              <span>Product Lead, Brightly</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="testimonial__text">
+              “Finally a platform that doesn’t fight us. Clean, fast, and actually enjoyable to use every day.”
+            </p>
+            <footer class="testimonial__author">
+              <strong>Marcus Rivera</strong>
+              <span>Engineering Manager, Orbit</span>
+            </footer>
+          </blockquote>
+
+          <blockquote class="testimonial">
+            <p class="testimonial__text">
+              “The responsive experience is outstanding. Our customers notice the difference immediately.”
+            </p>
+            <footer class="testimonial__author">
+              <strong>Priya Patel</strong>
+              <span>Founder, Loomly</span>
+            </footer>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FINAL CTA ===================== -->
+    <section class="cta" id="cta">
+      <div class="container cta__inner">
+        <h2 class="cta__title">Ready to build something great?</h2>
+        <p class="cta__text">Start your free 14-day trial today. No credit card required.</p>
+        <a href="#" class="btn btn--primary btn--lg">Get Started Free</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="logo">
+          <span class="logo__icon">◆</span>
+          <span class="logo__text">Nexus</span>
+        </a>
+        <p class="footer__tagline">Build better digital experiences.</p>
+      </div>
+
+      <div class="footer__links">
+        <div class="footer__col">
+          <h4 class="footer__heading">Product</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#">Changelog</a></li>
+            <li><a href="#">Docs</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Company</h4>
+          <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4 class="footer__heading">Legal</h4>
+          <ul>
+            <li><a href="#">Privacy</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">Security</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© 2025 Nexus. All rights reserved.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Twitter">𝕏</a>
+          <a href="#" aria-label="GitHub">⌥</a>
+          <a href="#" aria-label="LinkedIn">in</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
